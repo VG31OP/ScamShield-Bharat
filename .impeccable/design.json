@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T19:15:30.000Z",
+  "title": "Design System: ScamShield Bharat",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Electric Blue",
+        "canonical": "#074ce0",
+        "tonalRamp": [
+          "#042670",
+          "#0536a0",
+          "#0640bf",
+          "#074ce0",
+          "#2e6bf5",
+          "#5e8cf7",
+          "#a4bdfb",
+          "#e8effe"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Page Ground",
+        "canonical": "#fcfcfd",
+        "tonalRamp": [
+          "#16191f",
+          "#454c58",
+          "#8f97a3",
+          "#cbd0d9",
+          "#dde0e6",
+          "#f3f4f6",
+          "#f8fafc",
+          "#fcfcfd"
+        ]
+      },
+      "critical": {
+        "role": "semantic-critical",
+        "displayName": "Threat Red",
+        "canonical": "#d92d20",
+        "tonalRamp": [
+          "#55160c",
+          "#912018",
+          "#b42318",
+          "#d92d20",
+          "#f04438",
+          "#fda29b",
+          "#fee4e2",
+          "#fef3f2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Host Grotesk",
+        "purpose": "Display headlines and hero titles with tight tracking."
+      },
+      "body": {
+        "displayName": "Instrument Sans",
+        "purpose": "Readable paragraphs, explanations, and controls with relaxed leading."
+      }
+    },
+    "shadows": [
+      {
+        "name": "panel-shadow",
+        "value": "0 2px 6px -1px rgba(22, 25, 31, 0.04), 0 4px 12px -2px rgba(22, 25, 31, 0.03)",
+        "purpose": "Soft downward shadow under white panel cards."
+      }
+    ],
+    "motion": [
+      {
+        "name": "interaction",
+        "value": "160ms ease-out",
+        "purpose": "Default duration and easing for button hover and disclosure toggles."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Electric-blue action button with subtle hover lift and press return.",
+      "html": "<button class=\"ds-btn-primary\">Analyze Security Threat</button>",
+      "css": ".ds-btn-primary { background-color: #074ce0; color: #ffffff; padding: 10px 20px; font-family: 'Instrument Sans', sans-serif; font-size: 15px; font-weight: 600; border-radius: 8px; border: none; cursor: pointer; transition: transform 160ms ease-out, background-color 160ms ease-out; } .ds-btn-primary:hover { background-color: #0640bf; transform: translateY(-1px); } .ds-btn-primary:active { transform: translateY(0); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Pale outlined secondary button with hairline border and soft hover background.",
+      "html": "<button class=\"ds-btn-secondary\">Copy Assessment Report</button>",
+      "css": ".ds-btn-secondary { background-color: #ffffff; color: #16191f; padding: 10px 18px; font-family: 'Instrument Sans', sans-serif; font-size: 15px; font-weight: 500; border-radius: 8px; border: 1px solid #dde0e6; cursor: pointer; transition: transform 160ms ease-out, background-color 160ms ease-out; } .ds-btn-secondary:hover { background-color: #f3f4f6; transform: translateY(-1px); } .ds-btn-secondary:active { transform: translateY(0); }"
+    },
+    {
+      "name": "Panel Card",
+      "kind": "card",
+      "refersTo": "card-panel",
+      "description": "White surface container with 12px radius, hairline border, and soft downward shadow.",
+      "html": "<div class=\"ds-panel\"><h4 class=\"ds-panel-title\">Threat Assessment</h4><p class=\"ds-panel-body\">Deterministic rule analysis results.</p></div>",
+      "css": ".ds-panel { background-color: #ffffff; border: 1px solid #dde0e6; border-radius: 12px; padding: 24px; box-shadow: 0 2px 6px -1px rgba(22, 25, 31, 0.04); } .ds-panel-title { font-family: 'Host Grotesk', sans-serif; font-size: 18px; font-weight: 700; color: #16191f; margin: 0 0 8px 0; } .ds-panel-body { font-family: 'Instrument Sans', sans-serif; font-size: 15px; color: #454c58; line-height: 1.6; margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Digital Sentinel",
+    "overview": "ScamShield Bharat pairs an open, crisp light reading surface with an electric-blue action color and two substantial dark passages. The system prioritizes clarity and immediate comprehension for citizens under stress who may have received a frightening fraud notification.",
+    "keyCharacteristics": [
+      "Open Light Foundation: Clean near-white page (#fcfcfd) with pale-grey secondary groupings (#f3f4f6).",
+      "Electric-Blue Focus: High-contrast electric blue (#074ce0) dedicated to meaningful user actions.",
+      "Dual Dark Passages: Two continuous dark fields (#16191f) framing the analysis architecture and closing incident triage.",
+      "Editorial Typography: Display and title type in Host Grotesk paired with relaxed-leading Instrument Sans."
+    ],
+    "rules": [
+      {
+        "name": "The Single-Accent Rule",
+        "body": "Electric blue (#074ce0) is reserved strictly for primary interactive actions and the central engine node.",
+        "section": "colors"
+      },
+      {
+        "name": "The Legibility-First Rule",
+        "body": "Body text maintains a minimum line-height of 1.6 and strict WCAG AAA contrast ratio.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-At-Rest Rule",
+        "body": "All panels and cards rest flat against the surface. Subtle elevation is activated only during hover interactions.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the 1.45:1 hero split and converging diagram composition.",
+      "Do maintain the two continuous #16191f dark passages for the analysis architecture and the footer.",
+      "Do honor reduced motion preferences via @media (prefers-reduced-motion: reduce).",
+      "Do preserve full trilingual localization parity across English, Hindi, and Gujarati."
+    ],
+    "donts": [
+      "Don't add animated bounce, elastic easings, or gimmicky particle loops.",
+      "Don't use electric blue as a full-page background or decorative wash.",
+      "Don't fabricate claims, verified threat intelligence feeds, or artificial endorsements.",
+      "Don't automatically open or ping untrusted URLs entered by users."
+    ]
+  }
+}
